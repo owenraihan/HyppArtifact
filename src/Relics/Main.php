@@ -63,6 +63,7 @@ class Main extends PluginBase implements Listener {
         $command = "give ".$player->getName()." dirt 1";
         
         $this->getServer()->dispatchCommand(new ConsoleCommandSender, $command);
+        $player->getInventory()->removeItem(Item::get(399, 0, 1));
         
       }
     }
