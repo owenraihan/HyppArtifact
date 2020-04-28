@@ -46,7 +46,7 @@ class Main extends PluginBase implements Listener {
         $reward = Item::get(399, 0, 1);
         $reward->setCustomName("Common Relic");
         $reward->setNamedTagEntry(new StringTag("Common", "one"));
-        $player->getInventory()->addItem($item);
+        $ev->getInventory()->addItem($item);
       }
     }
   }
