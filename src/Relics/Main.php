@@ -57,7 +57,7 @@ class Main extends PluginBase implements Listener {
     
     if($item->getNamedTag()->hasTag("Common")){
       
-      $rewardString = $item->getNamedTag->getString("Common");
+      $rewardString = $item->getNamedTag()->getString("Common");
       
       if($rewardString === "one"){
         $command = "give ".$player->getName()." dirt 1";
